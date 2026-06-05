@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Globe, Target, Zap, Heart, CheckCircle } from 'lucide-react'
 import AnimatedSection from '@/components/ui/AnimatedSection'
@@ -102,17 +103,15 @@ export default function AboutPage() {
             {/* Photo placeholder */}
             <AnimatedSection direction="left">
               <div className="relative">
-                <div className="w-full max-w-sm mx-auto lg:mx-0 aspect-square rounded-3xl bg-surface border-2 border-primary/40 flex items-center justify-center overflow-hidden" style={{ boxShadow: '0 0 40px rgba(0,255,136,0.08), inset 0 0 60px rgba(0,255,136,0.03)' }}>
-                  <div className="text-center px-6">
-                    <div className="w-20 h-20 rounded-full border-2 border-primary/50 flex items-center justify-center mx-auto mb-5 bg-primary/5">
-                      <svg className="w-10 h-10 text-primary/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                      </svg>
-                    </div>
-                    <p className="text-primary font-semibold text-sm mb-1">Photo coming soon</p>
-                    <p className="text-muted text-xs">Abdullah Al Masud</p>
-                    <p className="text-muted/50 text-xs mt-0.5">Founder, Axiora GTM</p>
-                  </div>
+                <div className="w-full max-w-sm mx-auto lg:mx-0 rounded-2xl border-2 border-primary/40 overflow-hidden" style={{ boxShadow: '0 0 40px rgba(0,255,136,0.1)' }}>
+                  <Image
+                    src="/masud.jpg"
+                    alt="Abdullah Al Masud - Founder, Axiora GTM"
+                    width={480}
+                    height={480}
+                    className="w-full h-full object-cover rounded-2xl"
+                    priority
+                  />
                 </div>
                 {/* Floating badge */}
                 <div className="absolute -bottom-4 -right-4 bg-background border border-primary/30 rounded-2xl p-4 shadow-xl">
