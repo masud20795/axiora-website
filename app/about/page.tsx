@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Globe, Target, Zap, Heart, CheckCircle } from 'lucide-react'
 import AnimatedSection from '@/components/ui/AnimatedSection'
@@ -103,15 +102,14 @@ export default function AboutPage() {
             {/* Photo placeholder */}
             <AnimatedSection direction="left">
               <div className="relative">
-                <div className="w-full max-w-sm mx-auto lg:mx-0 rounded-2xl border-2 border-primary/40 overflow-hidden" style={{ boxShadow: '0 0 40px rgba(0,255,136,0.1)' }}>
-                  <Image
-                    src="/masud.jpg"
-                    alt="Abdullah Al Masud - Founder, Axiora GTM"
-                    width={480}
-                    height={640}
-                    className="w-full h-auto object-contain rounded-2xl"
-                    priority
-                  />
+                <div className="w-full max-w-sm mx-auto lg:mx-0 aspect-square rounded-3xl bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/20 flex items-center justify-center overflow-hidden">
+                  <div className="text-center">
+                    <div className="w-32 h-32 rounded-full bg-primary/20 border-2 border-primary/40 flex items-center justify-center mx-auto mb-4">
+                      <span className="text-5xl font-black text-primary">A</span>
+                    </div>
+                    <p className="text-muted text-sm">Abdullah Al Masud</p>
+                    <p className="text-xs text-muted/60 mt-1">Founder, Axiora GTM</p>
+                  </div>
                 </div>
                 {/* Floating badge */}
                 <div className="absolute -bottom-4 -right-4 bg-background border border-primary/30 rounded-2xl p-4 shadow-xl">
