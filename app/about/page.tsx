@@ -109,7 +109,7 @@ export default function AboutPage() {
                     alt="Abdullah Al Masud - Founder, Axiora GTM"
                     width={480}
                     height={480}
-                    className="w-full h-full object-cover rounded-2xl"
+                    className="w-full h-full object-cover object-top rounded-2xl"
                     priority
                   />
                 </div>
