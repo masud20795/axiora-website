@@ -135,7 +135,7 @@ export default function ContactPage() {
                     {[
                       { href: 'https://www.linkedin.com/in/masud-abdullah-al-616992203/', icon: Linkedin, label: 'LinkedIn' },
                       { href: 'https://x.com/20795masud', icon: Twitter, label: 'Twitter' },
-                      { href: 'https://instagram.com/axioragtm', icon: Instagram, label: 'Instagram' },
+                      { href: 'https://www.instagram.com/abdullahmasud74/', icon: Instagram, label: 'Instagram' },
                     ].map(({ href, icon: Icon, label }) => (
                       <a
                         key={label}
