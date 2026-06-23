@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Zap } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 const navLinks = [
   { href: '/services', label: 'Services' },
@@ -37,9 +38,13 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center group-hover:glow-green transition-all duration-300">
-              <Zap className="w-5 h-5 text-background" fill="currentColor" />
-            </div>
+            <Image
+              src="/axiora-logo.png"
+              alt="Axiora GTM Logo"
+              width={40}
+              height={40}
+              className="object-contain"
+            />
             <span className="text-xl font-black tracking-tight">
               Axiora<span className="text-primary">GTM</span>
             </span>
