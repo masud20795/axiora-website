@@ -17,7 +17,7 @@ const footerLinks = {
 }
 
 const socials = [
-  { href: 'https://linkedin.com/in/abdullahmasud', icon: Linkedin, label: 'LinkedIn' },
+  { href: 'https://www.linkedin.com/in/masud-abdullah-al-616992203/', icon: Linkedin, label: 'LinkedIn' },
   { href: 'https://twitter.com/axioragtm', icon: Twitter, label: 'Twitter' },
   { href: 'https://instagram.com/axioragtm', icon: Instagram, label: 'Instagram' },
   { href: 'https://youtube.com/@axioragtm', icon: Youtube, label: 'YouTube' },

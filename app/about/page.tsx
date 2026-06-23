@@ -159,7 +159,7 @@ export default function AboutPage() {
                   Work With Me <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a
-                  href="https://linkedin.com/in/abdullahmasud"
+                  href="https://www.linkedin.com/in/masud-abdullah-al-616992203/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-outline"
