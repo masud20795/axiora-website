@@ -134,7 +134,7 @@ export default function ContactPage() {
                   <div className="flex items-center gap-3 pt-2">
                     {[
                       { href: 'https://www.linkedin.com/in/masud-abdullah-al-616992203/', icon: Linkedin, label: 'LinkedIn' },
-                      { href: 'https://twitter.com/axioragtm', icon: Twitter, label: 'Twitter' },
+                      { href: 'https://x.com/20795masud', icon: Twitter, label: 'Twitter' },
                       { href: 'https://instagram.com/axioragtm', icon: Instagram, label: 'Instagram' },
                     ].map(({ href, icon: Icon, label }) => (
                       <a
